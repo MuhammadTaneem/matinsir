@@ -1,0 +1,36 @@
+<div class="personalInfo">
+  <mat-card class="example-card mt-2 row d-flex justify-content-between">
+    <div class="image col-12 col-md-4 ms-sm-2">
+      <img
+        mat-card-image
+        [src]="personal_data.image"
+        alt="About Matin picture"
+      />
+    </div>
+
+    <div class="description col-12 col-md-7 align-self-center">
+      <div class="">
+        <h2>{{ personal_data.first_name + " " + personal_data.last_name }}</h2>
+        <h3>{{ personal_data.bio }}</h3>
+        <h3>{{ personal_data.public_email }}</h3>
+
+        <button
+          mat-raised-button
+          color="primary"
+          [routerLink]="['/contact']"
+          routerLinkActive="router-link-active"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+<!-- --------------------------- -->
+
+<app-education></app-education>
+<app-work></app-work>
+<app-research></app-research>
+<app-gallery></app-gallery>
+<app-contact></app-contact>

@@ -1,0 +1,10 @@
+<mat-card class="m-2">
+  <h2><mat-icon>school</mat-icon> Education</h2>
+
+  <div class="mt-1" *ngFor="let item of education">
+    <p class="text-dec">
+      {{ item.degree + ", " + item.institution }}
+    </p>
+  </div>
+  <br />
+</mat-card>

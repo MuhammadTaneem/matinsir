@@ -1,0 +1,10 @@
+<mat-card class="m-2">
+  <h2><mat-icon>assured_workload</mat-icon> Experience</h2>
+
+  <div class="mt-1" *ngFor="let item of work">
+    <p class="text-dec">
+      {{ item.position + ", " + item.institution }}
+    </p>
+  </div>
+  <br />
+</mat-card>

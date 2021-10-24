@@ -1,0 +1,11 @@
+<mat-card class="m-2">
+  <h2><mat-icon>engineering</mat-icon> Research</h2>
+
+  <div class="mt-5" *ngFor="let item of reserarch">
+    <p class="text-dec">
+      <mat-icon> star</mat-icon>
+      {{ item.description }}
+    </p>
+    <hr />
+  </div>
+</mat-card>

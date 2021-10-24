@@ -1,0 +1,28 @@
+<mat-card class="d-flex box">
+  <h2>Contact</h2>
+
+  <div class="col d-flex justify-content-center">
+    <div class="pt-5">
+      <div class="div">
+        <a *ngIf="contact_data.facebook" [href]="contact_data.facebook"
+          ><i class="fab fa-facebook-square fa-2x">Facebook</i></a
+        >
+        <br />
+        <a *ngIf="contact_data.linkedin" [href]="contact_data.linkedin"
+          ><i class="fab fa-linkedin fa-2x">LinkedIn</i></a
+        >
+        <br />
+        <a *ngIf="contact_data.github" [href]="contact_data.github"
+          ><i class="fab fa-github-square fa-2x">GitHub</i></a
+        >
+      </div>
+      <div *ngIf="contact_data.public_email">
+        <mat-icon>contact_mail</mat-icon>
+        {{ contact_data.public_email }}
+      </div>
+      <div *ngIf="contact_data.phone">
+        <mat-icon>phone</mat-icon>{{ contact_data.phone }}
+      </div>
+    </div>
+  </div>
+</mat-card>
